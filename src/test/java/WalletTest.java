@@ -14,8 +14,8 @@ public class WalletTest {
     @Before
     public void before() {
         wallet = new Wallet("Jimmy");
-        creditCard = new CreditCard("1234 5678 9012", "09/25", "928", 500.00);
-        debitCard = new DebitCard("2345 6789 1927 2830", "08/25", "478", "09827489", "878787");
+        creditCard = new CreditCard("1234 5678 9012", "09/25", "928", 1000.00);
+        debitCard = new DebitCard("2345 6789 1927 2830", "08/25", "478", "09827489", "878787", 500.00);
         giftCard = new GiftCard(50);
     }
 
@@ -34,5 +34,21 @@ public class WalletTest {
         wallet.addItem(debitCard);
         assertEquals(1, wallet.getNumberOfItems());
     }
+
+    @Test
+    public void cardsOfDifferentTypesCanBeAddedToWallet() {
+        wallet.addItem(debitCard);
+        wallet.addItem(creditCard);
+        wallet.addItem(giftCard);
+        assertEquals(3, wallet.getNumberOfItems());
+    }
+
+    @Test
+    public void canSelectCard() {
+        wallet.addItem(creditCard);
+        wallet.setSelectedCard(creditCard);
+        assertEquals(creditCard, wallet.getSelectedCard());
+    }
+
 
 }

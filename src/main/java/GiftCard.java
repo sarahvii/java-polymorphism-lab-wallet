@@ -1,13 +1,18 @@
-public class GiftCard {
+public class GiftCard implements IChargeable {
 
-    private int balance;
+    private double balance;
 
     public GiftCard(int balance) {
         this.balance = balance;
     }
 
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
+    }
+
+    public void charge(double purchaseAmount) {
+
+//        return "Payment made by gift card";
     }
 }

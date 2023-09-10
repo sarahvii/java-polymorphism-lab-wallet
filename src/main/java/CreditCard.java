@@ -1,18 +1,18 @@
 public class CreditCard extends PaymentCard {
 
-    private Double availableCredit;
+    private double availableCredit;
 
-
-    public CreditCard(String cardNumber, String expiryDate, String securityNumber, Double availableCredit) {
+    public CreditCard(String cardNumber, String expiryDate, String securityNumber, double availableCredit) {
         super(cardNumber, expiryDate, securityNumber);
         this.availableCredit = availableCredit;
     }
 
-    public Double getAvailableCredit() {
+    public double getAvailableCredit() {
         return availableCredit;
     }
 
-    public String charge() {
-        return "Payment made by credit card";
+    public void charge(double purchaseAmount) {
+//        return "Payment made by credit card";
     }
+
 }

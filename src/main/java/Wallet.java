@@ -5,10 +5,12 @@ public class Wallet{
 
     public String owner;
     private ArrayList<IChargeable> items;
+    private IChargeable selectedCard;
 
     public Wallet(String owner) {
         this.owner = owner;
         this.items = new ArrayList<IChargeable>();
+        this.selectedCard = null;
     }
 
     public String getOwner() {
@@ -21,5 +23,15 @@ public class Wallet{
 
     public void addItem(IChargeable item) {
         this.items.add(item);
+    }
+
+    public IChargeable getSelectedCard() {
+        return selectedCard;
+    }
+
+    public void setSelectedCard(IChargeable item) {
+        if (items.contains(item)) {
+            this.selectedCard = item;
+        }
     }
 }

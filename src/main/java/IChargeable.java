@@ -1,3 +1,3 @@
 public interface IChargeable {
-    public String charge();
+    void charge(double purchaseAmount);
 }

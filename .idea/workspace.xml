@@ -4,23 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e6cb292-dfcb-4c8e-b698-684d0b035fa7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DebitCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GiftCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IChargeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PaymentCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CreditCardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DebitCardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GiftCardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WalletTest.java" afterDir="false" />
+    <list default="true" id="4e6cb292-dfcb-4c8e-b698-684d0b035fa7" name="Changes" comment="Wallet created and IChargeable implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DebitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DebitCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GiftCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GiftCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IChargeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IChargeable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PaymentCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PaymentCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreditCardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DebitCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DebitCardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WalletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WalletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,50 +48,51 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.WalletTest.walletStartsEmpty">
-    <configuration name="CreditCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WalletTest">
+    <configuration name="CreditCardTest.canBeCharged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="virtual-wallet-polymorphism-lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CreditCardTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreditCardTest.hasAvailableCredit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="virtual-wallet-polymorphism-lab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreditCardTest" />
-      <option name="METHOD_NAME" value="hasAvailableCredit" />
+      <option name="METHOD_NAME" value="canBeCharged" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DebitCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WalletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="virtual-wallet-polymorphism-lab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DebitCardTest" />
+      <option name="MAIN_CLASS_NAME" value="WalletTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WalletTest.walletHasOwner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WalletTest.canChargeCreditCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="virtual-wallet-polymorphism-lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WalletTest" />
-      <option name="METHOD_NAME" value="walletHasOwner" />
+      <option name="METHOD_NAME" value="canChargeCreditCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WalletTest.walletStartsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WalletTest.canSelectCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="virtual-wallet-polymorphism-lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WalletTest" />
-      <option name="METHOD_NAME" value="walletStartsEmpty" />
+      <option name="METHOD_NAME" value="canSelectCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletTest.cardsOfDifferentTypesCanBeAddedToWallet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="virtual-wallet-polymorphism-lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WalletTest" />
+      <option name="METHOD_NAME" value="cardsOfDifferentTypesCanBeAddedToWallet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WalletTest.walletStartsEmpty" />
-        <item itemvalue="JUnit.WalletTest.walletHasOwner" />
-        <item itemvalue="JUnit.CreditCardTest.hasAvailableCredit" />
-        <item itemvalue="JUnit.CreditCardTest" />
-        <item itemvalue="JUnit.DebitCardTest" />
+        <item itemvalue="JUnit.WalletTest" />
+        <item itemvalue="JUnit.CreditCardTest.canBeCharged" />
+        <item itemvalue="JUnit.WalletTest.canSelectCard" />
+        <item itemvalue="JUnit.WalletTest.canChargeCreditCard" />
+        <item itemvalue="JUnit.WalletTest.cardsOfDifferentTypesCanBeAddedToWallet" />
       </list>
     </recent_temporary>
   </component>
@@ -135,6 +130,14 @@
       <option name="presentableId" value="Default" />
       <updated>1694289276766</updated>
     </task>
+    <task id="LOCAL-00001" summary="Wallet created and IChargeable implemented">
+      <created>1694347042554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694347042554</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,5 +150,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Wallet created and IChargeable implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wallet created and IChargeable implemented" />
   </component>
 </project>

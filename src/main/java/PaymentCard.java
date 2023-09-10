@@ -22,5 +22,4 @@ public abstract class PaymentCard implements IChargeable {
         return this.securityNumber;
     }
 
-    public abstract String charge();
 }
