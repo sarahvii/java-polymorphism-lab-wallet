@@ -34,4 +34,12 @@ public class Wallet{
             this.selectedCard = item;
         }
     }
+
+    public void payWithSelectedCard(double purchaseAmount) {
+        if (this.selectedCard == null) {
+            System.out.println("No card selected");
+            return;
+        }
+        this.selectedCard.charge(purchaseAmount);
+     }
 }

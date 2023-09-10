@@ -50,5 +50,13 @@ public class WalletTest {
         assertEquals(creditCard, wallet.getSelectedCard());
     }
 
+    @Test
+    public void canPayWithSelectedCard() {
+        wallet.addItem(debitCard);
+        wallet.setSelectedCard(debitCard);
+        wallet.payWithSelectedCard(50);
+        assertEquals(450.00, debitCard.getBalance(), 0.01);
+    }
+
 
 }

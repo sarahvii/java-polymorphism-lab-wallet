@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e6cb292-dfcb-4c8e-b698-684d0b035fa7" name="Changes" comment="all properties tested">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DebitCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DebitCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreditCardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DebitCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DebitCardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GiftCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GiftCardTest.java" afterDir="false" />
+    <list default="true" id="4e6cb292-dfcb-4c8e-b698-684d0b035fa7" name="Changes" comment="all cards can be charged, each with different behaviours">
+      <change beforePath="$PROJECT_DIR$/src/test/java/WalletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WalletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +39,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.GiftCardTest.canBeCharged">
+  <component name="RunManager" selected="JUnit.WalletTest.canPayWithSelectedCard">
     <configuration name="CreditCardTest.canBeCharged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="virtual-wallet-polymorphism-lab" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,11 +79,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WalletTest.canSelectCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WalletTest.canPayWithSelectedCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="virtual-wallet-polymorphism-lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WalletTest" />
-      <option name="METHOD_NAME" value="canSelectCard" />
+      <option name="METHOD_NAME" value="canPayWithSelectedCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WalletTest.canPayWithSelectedCard" />
         <item itemvalue="JUnit.GiftCardTest.canBeCharged" />
         <item itemvalue="JUnit.DebitCardTest.canBeCharged" />
         <item itemvalue="JUnit.CreditCardTest.canBeCharged" />
         <item itemvalue="JUnit.WalletTest" />
-        <item itemvalue="JUnit.WalletTest.canSelectCard" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694353631880</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="all cards can be charged, each with different behaviours">
+      <created>1694355107206</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694355107206</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Wallet created and IChargeable implemented" />
     <MESSAGE value="all properties tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="all properties tested" />
+    <MESSAGE value="all cards can be charged, each with different behaviours" />
+    <option name="LAST_COMMIT_MESSAGE" value="all cards can be charged, each with different behaviours" />
   </component>
 </project>
