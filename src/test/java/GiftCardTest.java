@@ -1,4 +1,5 @@
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,6 +16,12 @@ public class GiftCardTest {
     @Test
     public void hasBalance(){
         assertEquals(100, giftCard.getBalance());
+    }
+
+    @Test
+    public void canBeCharged() {
+        giftCard.charge(10.00);
+        Assert.assertEquals(90, giftCard.getBalance(), 0.01);
     }
 
 }

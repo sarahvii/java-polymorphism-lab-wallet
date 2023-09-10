@@ -36,4 +36,10 @@ public class DebitCardTest {
     public void hasSortCode() {
         assertEquals("001122", debitCard.getSortCode());
     }
+
+    @Test
+    public void canBeCharged() {
+        debitCard.charge(100.00);
+        assertEquals(400, debitCard.getBalance(), 0.01);
+    }
 }

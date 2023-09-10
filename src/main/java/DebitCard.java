@@ -25,6 +25,13 @@ public class DebitCard extends PaymentCard {
     }
 
     public void charge(double purchaseAmount) {
-//        return "Payment made by debit card";
+        if (purchaseAmount > balance) {
+            System.out.println("You have insufficient funds");
+            return;
+        }
+        this.balance -= purchaseAmount;
+        String logPayment = String.format("%s has been charged, you have %s remaining", purchaseAmount, balance);
+        System.out.println(logPayment);
+
     }
 }

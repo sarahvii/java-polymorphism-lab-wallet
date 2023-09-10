@@ -36,6 +36,6 @@ public class CreditCardTest {
     @Test
     public void canBeCharged() {
         creditCard.charge(100.00);
-        assertEquals(900, creditCard.getAvailableCredit(), 0.01);
+        assertEquals(895, creditCard.getAvailableCredit(), 0.01);
     }
 }

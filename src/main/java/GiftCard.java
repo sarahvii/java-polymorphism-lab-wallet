@@ -12,7 +12,10 @@ public class GiftCard implements IChargeable {
     }
 
     public void charge(double purchaseAmount) {
-
-//        return "Payment made by gift card";
+        if (purchaseAmount > balance) {
+            System.out.println("Balance is insufficient");
+            return;
+        }
+        this.balance -= purchaseAmount;
     }
 }
